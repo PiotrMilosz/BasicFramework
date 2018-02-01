@@ -1,0 +1,6 @@
+10:37:00.055 INFO - I am in onStart method Command line test
+10:37:03.436 INFO - Driver initialised
+10:37:03.439 INFO - I am in onTestStart method st_test start
+10:37:17.936 INFO - Page Tesco.pl opened
+10:37:17.936 INFO - Test SimpleTest.st_test()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Passed!
+10:37:20.816 INFO - Driver terminated
