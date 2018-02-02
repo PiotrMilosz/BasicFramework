@@ -1,0 +1,4 @@
+07:40:15.443 INFO - I am in onStart method Command line test
+07:40:18.805 INFO - Driver initialised
+07:40:18.812 INFO - I am in onTestStart method OpenMainPage start
+07:40:18.910 WARN - Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Skipped!

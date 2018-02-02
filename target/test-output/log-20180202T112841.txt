@@ -1,0 +1,9 @@
+11:28:41.976 INFO - I am in onStart method Command line test
+11:28:45.304 INFO - Driver initialised
+11:28:45.336 INFO - I am in onTestStart method OpenMainPage start
+11:29:03.638 INFO - http://tesco.pl is correctly displayed
+11:29:03.640 INFO - Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Passed!
+11:29:03.642 INFO - I am in onTestStart method GoToEZakupyPage start
+11:29:09.011 INFO - Przej?cie na strone e-zakupy
+11:29:09.012 INFO - Test SimpleTest.GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Passed!
+11:29:14.502 INFO - Driver terminated

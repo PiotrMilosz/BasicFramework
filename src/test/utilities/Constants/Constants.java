@@ -38,4 +38,36 @@ public class Constants{
 		return browserUrl;
 	}
 	
+	public static String getLogin() {
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		property = new Properties();
+		try {
+			property.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return property.getProperty("login");
+}
+	public static String getPassword() {
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		property = new Properties();
+		try {
+			property.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return property.getProperty("password");
+}
 }

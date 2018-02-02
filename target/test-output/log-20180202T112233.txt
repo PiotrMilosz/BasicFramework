@@ -1,0 +1,6 @@
+11:22:33.441 INFO - I am in onStart method Command line test
+11:22:36.781 INFO - Driver initialised
+11:22:36.821 INFO - I am in onTestStart method OpenMainPage start
+11:22:54.173 INFO - http://tesco.pl is correctly displayed
+11:22:54.175 INFO - Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Passed!
+11:22:56.546 INFO - Driver terminated

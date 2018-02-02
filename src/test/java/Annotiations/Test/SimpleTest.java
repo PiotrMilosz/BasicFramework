@@ -16,4 +16,9 @@ public class SimpleTest extends BaseTest {
 		Assert.assertTrue(mPage.openPage());
 
 	}
+	@Test(priority=2,description="Przejście na strone eZakupy")
+	public void GoToEZakupyPage() {
+		ExtentTestManager.getTest().setDescription("Przejście na strone eZakupy");	
+		mPage.goToEzakupy();
+	}
 }

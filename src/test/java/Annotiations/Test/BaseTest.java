@@ -1,6 +1,7 @@
 package Annotiations.Test;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
@@ -28,6 +29,7 @@ public class BaseTest {
 		driver = DriverGenerator.getDriver();
 		Log.info("Driver initialised");
 		mPage = new MainPage(driver);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 	}
 

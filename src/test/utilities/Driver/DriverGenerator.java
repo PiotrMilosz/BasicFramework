@@ -18,15 +18,14 @@ public class DriverGenerator {
 	public static WebDriver driver;
 	public static String browser;
 
-	
+	//Set directory for drivers
 	static File geckoFile=new File("geckodriver.exe");
 	static File chromeFile=new File("chromedriver.exe");
 	static File edgeFile=new File("MicrosoftWebDriver.exe");
-
+//Determine the d
 	public static WebDriver getDriver() {
 
 		browser = Constants.getBrowser();
-		System.out.println(browser);
 		if (browser.equals("firefox")) {
 			driver = getFirefoxDriver();
 		}else if(browser.equals("chrome")) {

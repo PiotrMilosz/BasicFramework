@@ -1,6 +1,7 @@
 package Annotiations.Test;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,8 @@ public class MainPage extends BasePage{
 	
 	@FindBy(className="tescoce-logo")
 	private WebElement tescoLogo;
+	@FindBy(className="e-zakupy")
+	private WebElement eZakupyBtn;
 	
 	public boolean openPage() throws IOException {
 		
@@ -27,6 +30,9 @@ public class MainPage extends BasePage{
 		//Wait for Logo to be loaded
 		waitElement(tescoLogo);
 		//Check if Logo is displayed
+		waitForPageLoad();
+		
+		
 		if(tescoLogo.isDisplayed()) {
 			elements=true;
 			Log.info(url + " is correctly displayed");
@@ -37,5 +43,15 @@ public class MainPage extends BasePage{
 		return elements;
 				
 	}
+	//PRzejscie na stronę e-zakupy
+	public void goToEzakupy() {
+		clickElement(eZakupyBtn);		
+		//Przełączanie na nowego taba
+		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+		driver.switchTo().window(tabs2.get(1));	
+		waitForPageLoad();
+		Log.info("Przejście na strone e-zakupy");
+	}
+	
 	
 }
