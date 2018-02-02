@@ -32,7 +32,6 @@ public class MainPage extends BasePage{
 		//Check if Logo is displayed
 		waitForPageLoad();
 		
-		
 		if(tescoLogo.isDisplayed()) {
 			elements=true;
 			Log.info(url + " is correctly displayed");

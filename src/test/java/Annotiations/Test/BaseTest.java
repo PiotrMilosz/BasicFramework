@@ -22,6 +22,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected final Logger Log = LoggerFactory.getLogger(getClass());
 	public MainPage mPage;
+	public EZakupyPage eZakupy;
 	
 
 	@BeforeClass
@@ -29,6 +30,7 @@ public class BaseTest {
 		driver = DriverGenerator.getDriver();
 		Log.info("Driver initialised");
 		mPage = new MainPage(driver);
+		eZakupy = new EZakupyPage(driver);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 	}

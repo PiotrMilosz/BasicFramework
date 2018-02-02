@@ -16,9 +16,16 @@ public class SimpleTest extends BaseTest {
 		Assert.assertTrue(mPage.openPage());
 
 	}
-	@Test(priority=2,description="Przejście na strone eZakupy")
+
+	@Test(priority = 2, description = "Przejście na strone eZakupy")
 	public void GoToEZakupyPage() {
-		ExtentTestManager.getTest().setDescription("Przejście na strone eZakupy");	
+		ExtentTestManager.getTest().setDescription("Przejście na strone eZakupy");
 		mPage.goToEzakupy();
+	}
+
+	@Test(priority = 3, description = "Zalogowanie do eZakupy")
+	public void LoginToEZakupy() {
+		ExtentTestManager.getTest().setDescription("Zalogowanie się do eZakupy");
+		Assert.assertTrue(eZakupy.logIn());
 	}
 }

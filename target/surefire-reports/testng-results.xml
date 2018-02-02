@@ -1,41 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="32530" started-at="2018-02-02T10:28:41Z" finished-at="2018-02-02T10:29:14Z">
+  <suite name="Command line suite" duration-ms="33142" started-at="2018-02-02T12:13:24Z" finished-at="2018-02-02T12:13:58Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="32530" started-at="2018-02-02T10:28:41Z" finished-at="2018-02-02T10:29:14Z">
+    <test name="Command line test" duration-ms="33142" started-at="2018-02-02T12:13:24Z" finished-at="2018-02-02T12:13:58Z">
       <class name="Annotiations.Test.SimpleTest">
-        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="initialiseDriver" is-config="true" duration-ms="3351" started-at="2018-02-02T11:28:41Z" finished-at="2018-02-02T11:28:45Z">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="initialiseDriver" is-config="true" duration-ms="3380" started-at="2018-02-02T13:13:24Z" finished-at="2018-02-02T13:13:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-02T11:28:45Z" finished-at="2018-02-02T11:28:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-02T13:13:28Z" finished-at="2018-02-02T13:13:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="OpenMainPage" duration-ms="18304" started-at="2018-02-02T11:28:45Z" description="Uruchomienie strony Tesco.pl" finished-at="2018-02-02T11:29:03Z">
+        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="OpenMainPage" duration-ms="14882" started-at="2018-02-02T13:13:28Z" description="Uruchomienie strony Tesco.pl" finished-at="2018-02-02T13:13:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenMainPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-02T11:29:03Z" finished-at="2018-02-02T11:29:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-02T11:29:03Z" finished-at="2018-02-02T11:29:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="GoToEZakupyPage" duration-ms="5370" started-at="2018-02-02T11:29:03Z" description="Przejście na strone eZakupy" finished-at="2018-02-02T11:29:09Z">
+        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="GoToEZakupyPage" duration-ms="7475" started-at="2018-02-02T13:13:43Z" description="Przejście na strone eZakupy" finished-at="2018-02-02T13:13:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToEZakupyPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-02T11:29:09Z" finished-at="2018-02-02T11:29:09Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-02T13:13:43Z" finished-at="2018-02-02T13:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-02T13:13:43Z" finished-at="2018-02-02T13:13:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="quitDriver" is-config="true" duration-ms="5490" started-at="2018-02-02T11:29:09Z" finished-at="2018-02-02T11:29:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-02-02T13:13:50Z" finished-at="2018-02-02T13:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-02T13:13:50Z" finished-at="2018-02-02T13:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="LoginToEZakupy" duration-ms="5098" started-at="2018-02-02T13:13:50Z" description="Zalogowanie do eZakupy" finished-at="2018-02-02T13:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToEZakupy -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-02T13:13:55Z" finished-at="2018-02-02T13:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="quitDriver" is-config="true" duration-ms="2292" started-at="2018-02-02T13:13:55Z" finished-at="2018-02-02T13:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
