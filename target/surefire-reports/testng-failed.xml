@@ -6,9 +6,10 @@
       <class name="Annotiations.Test.SimpleTest">
         <methods>
           <include name="LoginToEZakupy"/>
+          <include name="afterTest"/>
           <include name="initialiseDriver"/>
-          <include name="GoToEZakupyPage"/>
-          <include name="OpenMainPage"/>
+          <include name="quitDriver"/>
+          <include name="beforeMethod"/>
         </methods>
       </class> <!-- Annotiations.Test.SimpleTest -->
     </classes>

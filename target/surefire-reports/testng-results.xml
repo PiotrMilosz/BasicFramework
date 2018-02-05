@@ -2,55 +2,76 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="34674" started-at="2018-02-05T07:53:27Z" finished-at="2018-02-05T07:54:02Z">
+  <suite name="Command line suite" duration-ms="34190" started-at="2018-02-05T13:27:59Z" finished-at="2018-02-05T13:28:33Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="34674" started-at="2018-02-05T07:53:27Z" finished-at="2018-02-05T07:54:02Z">
+    <test name="Command line test" duration-ms="34190" started-at="2018-02-05T13:27:59Z" finished-at="2018-02-05T13:28:33Z">
       <class name="Annotiations.Test.SimpleTest">
-        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="initialiseDriver" is-config="true" duration-ms="3316" started-at="2018-02-05T08:53:27Z" finished-at="2018-02-05T08:53:31Z">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="initialiseDriver" is-config="true" duration-ms="3327" started-at="2018-02-05T14:27:59Z" finished-at="2018-02-05T14:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseDriver -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:53:31Z" finished-at="2018-02-05T08:53:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="OpenMainPage" duration-ms="18566" started-at="2018-02-05T08:53:31Z" description="Uruchomienie strony Tesco.pl" finished-at="2018-02-05T08:53:49Z">
+        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="OpenMainPage" duration-ms="18312" started-at="2018-02-05T14:28:03Z" description="Uruchomienie strony Tesco.pl" finished-at="2018-02-05T14:28:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenMainPage -->
-        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="GoToEZakupyPage" duration-ms="5459" started-at="2018-02-05T08:53:49Z" description="Przejście na strone eZakupy" finished-at="2018-02-05T08:53:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T14:28:03Z" finished-at="2018-02-05T14:28:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-02-05T14:28:21Z" finished-at="2018-02-05T14:28:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OpenMainPage status=SUCCESS method=SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="GoToEZakupyPage" duration-ms="5562" started-at="2018-02-05T14:28:21Z" description="Przejście na strone eZakupy" finished-at="2018-02-05T14:28:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToEZakupyPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:53:49Z" finished-at="2018-02-05T08:53:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T14:28:21Z" finished-at="2018-02-05T14:28:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:53:49Z" finished-at="2018-02-05T08:53:49Z">
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-02-05T14:28:26Z" finished-at="2018-02-05T14:28:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GoToEZakupyPage status=SUCCESS method=SimpleTest.GoToEZakupyPage()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:53:55Z" finished-at="2018-02-05T08:53:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:53:55Z" finished-at="2018-02-05T08:53:55Z">
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-05T14:28:26Z" finished-at="2018-02-05T14:28:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="LoginToEZakupy" duration-ms="4986" started-at="2018-02-05T08:53:55Z" description="Zalogowanie do eZakupy" finished-at="2018-02-05T08:54:00Z">
+        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="LoginToEZakupy" duration-ms="4444" started-at="2018-02-05T14:28:26Z" description="Zalogowanie do eZakupy" finished-at="2018-02-05T14:28:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToEZakupy -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-05T08:54:00Z" finished-at="2018-02-05T08:54:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af]" name="quitDriver" is-config="true" duration-ms="2332" started-at="2018-02-05T08:54:00Z" finished-at="2018-02-05T08:54:02Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="quitDriver" is-config="true" duration-ms="2531" started-at="2018-02-05T14:28:31Z" finished-at="2018-02-05T14:28:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="afterTest(org.testng.ITestResult)[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-02-05T14:28:31Z" finished-at="2018-02-05T14:28:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginToEZakupy status=SUCCESS method=SimpleTest.LoginToEZakupy()[pri:0, instance:Annotiations.Test.SimpleTest@77caeb3e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- Annotiations.Test.SimpleTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->

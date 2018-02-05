@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-import Constants.Constants;
+import properties.GetProperties;
 
 public class MainPage extends BasePage{
 	
@@ -21,26 +21,31 @@ public class MainPage extends BasePage{
 	private WebElement tescoLogo;
 	@FindBy(className="e-zakupy")
 	private WebElement eZakupyBtn;
+	@FindBy(className="user-greeting--message")
+	private WebElement greetLogo;
 	
-	public boolean openPage() throws IOException {
+	public void openPage() throws IOException {
 		
-		boolean elements = false;
-		String url=Constants.getUrl();
+		String url=GetProperties.getUrl();
 		driver.get(url);
 		//Wait for Logo to be loaded
 		waitElement(tescoLogo);
 		//Check if Logo is displayed
 		waitForPageLoad();
 		
-		if(tescoLogo.isDisplayed()) {
-			elements=true;
-			Log.info(url + " is correctly displayed");
+	}
+	
+	public boolean isTescoLogo(){
+		boolean isTescoLogo = false;
+		isTescoLogo=isElementOnPage(tescoLogo);
+		if(isTescoLogo=true) {
+			Log.info("User is on Page");
 		}else {
-			elements=false;
-			Log.warn(url + " is not displayed correctly");
+			Log.info("User is not on Page");
 		}
-		return elements;
-				
+		return isTescoLogo;
+			
+						
 	}
 	//PRzejscie na stronę e-zakupy
 	public void goToEzakupy() {
@@ -49,7 +54,19 @@ public class MainPage extends BasePage{
 		ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
 		driver.switchTo().window(tabs2.get(1));	
 		waitForPageLoad();
-		Log.info("Przejście na strone e-zakupy");
+		
+	}
+	
+	public boolean eZakupyVerif() {
+		boolean eZakupyVerif=false;
+		eZakupyVerif=isElementOnPage(greetLogo);
+		if(eZakupyVerif=true) {
+			Log.info("User is on eZakupy");
+		}else {
+			Log.info("User is not on eZakupy");
+		}
+		return eZakupyVerif;
+	
 	}
 	
 	

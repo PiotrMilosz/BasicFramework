@@ -1,4 +1,4 @@
-package Driver;
+package driver;
 
 
 
@@ -9,9 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-
-
-import Constants.Constants;
+import properties.GetProperties;
 
 public class DriverGenerator {
 
@@ -25,7 +23,7 @@ public class DriverGenerator {
 //Determine the d
 	public static WebDriver getDriver() {
 
-		browser = Constants.getBrowser();
+		browser = GetProperties.getBrowser();
 		if (browser.equals("firefox")) {
 			driver = getFirefoxDriver();
 		}else if(browser.equals("chrome")) {

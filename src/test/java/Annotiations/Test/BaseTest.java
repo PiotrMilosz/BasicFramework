@@ -4,19 +4,22 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
+import Annotiations.Test.EZakupyPage;
+import Annotiations.Test.MainPage;
+import driver.DriverGenerator;
+import extentReports.ExtentTestManager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import Driver.DriverGenerator;
-
-@Listeners(Listener.Listeners.class)
+@Listeners(listener.Listeners.class)
 public class BaseTest {
 
 	protected WebDriver driver;
@@ -42,9 +45,11 @@ public class BaseTest {
 	}
 
 	@AfterMethod
-	public void afterMethod() {
-		System.out.println("We are in after method");
-	}
+	public void afterTest(ITestResult result) {
+	Log.info("Performing After method");
+	        ExtentTestManager.getTest().setDescription(result.getMethod().getDescription());
+	    }
+	
 	@AfterClass
 	public void quitDriver() {
 		driver.quit();

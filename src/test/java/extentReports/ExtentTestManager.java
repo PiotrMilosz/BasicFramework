@@ -1,4 +1,4 @@
-package ExtentReports;
+package extentReports;
 
 import java.util.HashMap;
 import java.util.Map;

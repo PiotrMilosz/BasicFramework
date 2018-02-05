@@ -1,4 +1,4 @@
-package Listener;
+package listener;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -10,9 +10,9 @@ import org.testng.ITestResult;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Annotiations.Test.BaseTest;
-import Driver.DriverGenerator;
-import ExtentReports.ExtentManager;
-import ExtentReports.ExtentTestManager;
+import driver.DriverGenerator;
+import extentReports.ExtentManager;
+import extentReports.ExtentTestManager;
 
 public class Listeners extends BaseTest implements ITestListener {
 

@@ -23,20 +23,24 @@ public class EZakupyPage extends BasePage {
 	@FindBy(className="utility-header__logout-button")
 	private WebElement wylogujBtn;
 	
-	public boolean logIn() {
-		boolean logIn = true;
+	public void logIn() {
 		clickElement(zalogujBtn);
 		waitForPageLoad();
-		loginFld.sendKeys(Constants.Constants.getLogin());
-		passwordFld.sendKeys(Constants.Constants.getPassword());
+		loginFld.sendKeys(properties.GetProperties.getLogin());
+		passwordFld.sendKeys(properties.GetProperties.getPassword());
 		clickElement(submitBtn);
-		logIn=isElementOnPage(wylogujBtn);
-		if(logIn=true) {
+		
+	}
+	
+	public boolean isUserLogged() {
+		boolean isUserLoogged = false;
+		isUserLoogged=isElementOnPage(wylogujBtn);
+		if(isUserLoogged=true) {
 			Log.info("User is loged in to service");
 		}else {
 			Log.info("User is not loged in to service");
 		}
-		return logIn;
+		return isUserLoogged;
 		}
 		
 		
