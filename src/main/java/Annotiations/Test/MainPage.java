@@ -16,7 +16,7 @@ public class MainPage extends BasePage{
 		super(driver);
 		
 	}
-	
+	//Obiekty z Tesco.pl i eZakupy
 	@FindBy(className="tescoce-logo")
 	private WebElement tescoLogo;
 	@FindBy(className="e-zakupy")
@@ -24,6 +24,7 @@ public class MainPage extends BasePage{
 	@FindBy(className="user-greeting--message")
 	private WebElement greetLogo;
 	
+	//Wejście na strone
 	public void openPage() throws IOException {
 		
 		String url=GetProperties.getUrl();
@@ -34,7 +35,7 @@ public class MainPage extends BasePage{
 		waitForPageLoad();
 		
 	}
-	
+	//Weryfikacja wejścia na stronę tesco.pl
 	public boolean isTescoLogo(){
 		boolean isTescoLogo = false;
 		isTescoLogo=isElementOnPage(tescoLogo);
@@ -56,7 +57,7 @@ public class MainPage extends BasePage{
 		waitForPageLoad();
 		
 	}
-	
+	//Weryfikacja przejścia na e-zakupy
 	public boolean eZakupyVerif() {
 		boolean eZakupyVerif=false;
 		eZakupyVerif=isElementOnPage(greetLogo);

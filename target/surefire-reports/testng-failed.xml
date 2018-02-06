@@ -9,7 +9,9 @@
           <include name="afterTest"/>
           <include name="initialiseDriver"/>
           <include name="quitDriver"/>
+          <include name="GoToEZakupyPage"/>
           <include name="beforeMethod"/>
+          <include name="AddToCart"/>
         </methods>
       </class> <!-- Annotiations.Test.SimpleTest -->
     </classes>

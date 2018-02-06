@@ -26,4 +26,9 @@ public class SimpleTest extends BaseTest {
 		eZakupy.logIn();
 		Assert.assertTrue(eZakupy.isUserLogged(),"User was not logged in to service, logout option is not displayed");
 	}
+	@Test(priority=4,description= "Szukanie i dodawanie produktu do koszyka")
+	public void AddToCart() {
+		 eZakupy.cheepestProductFinder("chleb");
+		 Assert.assertTrue(eZakupy.isAddToCart(),"Name of product selected and in the cart are not the same");
+	}
 }

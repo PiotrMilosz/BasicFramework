@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
                     </span>
                     <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="Annotiations.Test.SimpleTest" hash-for-method="AddToCart">AddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Command_line_suite" title="Annotiations.Test.SimpleTest" hash-for-method="GoToEZakupyPage">GoToEZakupyPage</a> <!-- method navigator-link -->
@@ -132,6 +137,15 @@
               <span class="class-name">Annotiations.Test.SimpleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddToCart">
+                  </a> <!-- AddToCart -->
+                  <span class="method-name">AddToCart</span>
+                  <em>
+(Szukanie i dodawanie produktu do koszyka)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="GoToEZakupyPage">
@@ -213,24 +227,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'OpenMainPage')
 data.setCell(0, 2, 'Annotiations.Test.SimpleTest')
-data.setCell(0, 3, 18312);
+data.setCell(0, 3, 18805);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'GoToEZakupyPage')
+data.setCell(1, 1, 'AddToCart')
 data.setCell(1, 2, 'Annotiations.Test.SimpleTest')
-data.setCell(1, 3, 5562);
+data.setCell(1, 3, 7177);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LoginToEZakupy')
+data.setCell(2, 1, 'GoToEZakupyPage')
 data.setCell(2, 2, 'Annotiations.Test.SimpleTest')
-data.setCell(2, 3, 4444);
+data.setCell(2, 3, 3932);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginToEZakupy')
+data.setCell(3, 2, 'Annotiations.Test.SimpleTest')
+data.setCell(3, 3, 3725);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -263,43 +281,55 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">3328 ms</span>
+                <span class="method-start">3390 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OpenMainPage</span>
-                <span class="method-start">3328 ms</span>
+                <span class="method-start">3390 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest([TestResult name=OpenMainPage status=SUCCESS method=SimpleTest.OpenMainPage()[pri:0, instance:Annoti...)</span>
-                <span class="method-start">21641 ms</span>
+                <span class="method-start">22196 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">21642 ms</span>
+                <span class="method-start">22197 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">GoToEZakupyPage</span>
-                <span class="method-start">21642 ms</span>
+                <span class="method-start">22197 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest([TestResult name=GoToEZakupyPage status=SUCCESS method=SimpleTest.GoToEZakupyPage()[pri:0, instance:...)</span>
-                <span class="method-start">27204 ms</span>
+                <span class="method-start">26129 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">27205 ms</span>
+                <span class="method-start">26130 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginToEZakupy</span>
-                <span class="method-start">27205 ms</span>
+                <span class="method-start">26130 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest([TestResult name=LoginToEZakupy status=SUCCESS method=SimpleTest.LoginToEZakupy()[pri:0, instance:An...)</span>
-                <span class="method-start">31650 ms</span>
+                <span class="method-start">29855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">29855 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddToCart</span>
+                <span class="method-start">29855 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest([TestResult name=AddToCart status=SUCCESS method=SimpleTest.AddToCart()[pri:0, instance:Annotiations...)</span>
+                <span class="method-start">37032 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">31650 ms</span>
+                <span class="method-start">37033 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
