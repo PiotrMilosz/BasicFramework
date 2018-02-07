@@ -3,6 +3,7 @@ package Annotiations.Test;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -27,6 +28,10 @@ public class BaseTest {
 	public MainPage mPage;
 	public EZakupyPage eZakupy;
 	
+	
+	public WebDriver gimiDriver() {
+        return driver;
+    }
 
 	@BeforeClass
 	public void initialiseDriver() throws IOException {

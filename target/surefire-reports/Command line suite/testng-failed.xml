@@ -5,11 +5,9 @@
     <classes>
       <class name="Annotiations.Test.SimpleTest">
         <methods>
-          <include name="LoginToEZakupy"/>
           <include name="afterTest"/>
           <include name="initialiseDriver"/>
           <include name="quitDriver"/>
-          <include name="GoToEZakupyPage"/>
           <include name="beforeMethod"/>
           <include name="AddToCart"/>
         </methods>

@@ -33,7 +33,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		Log.error("Test " + result.getMethod()+" Failed!");
 		
 		Object testClass = result.getInstance();
-        WebDriver webDriver = driver;
+        WebDriver webDriver = ((BaseTest) testClass).gimiDriver();
  
         //Take base64Screenshot screenshot.
         String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).
