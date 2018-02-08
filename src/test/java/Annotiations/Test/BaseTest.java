@@ -20,7 +20,6 @@ import extentReports.ExtentTestManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Listeners(listener.Listeners.class)
 public class BaseTest {
 
 	protected WebDriver driver;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="47.11" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="38.937" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Users\pmilosz\.jenkins\tools\hudson.model.JDK\JDK_8\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\FunWithFlags\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1928331604836145432.tmp"/>
+    <property name="classworlds.conf" value="C:\FunWithFlags\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7197232596876300562.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\pmilosz\.jenkins\tools\hudson.model.JDK\JDK_8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_151/bin/server;C:/Program Files/Java/jre1.8.0_151/bin;C:/Program Files/Java/jre1.8.0_151/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Users\pmilosz\.jenkins\tools\hudson.model.JDK\JDK_8\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Users\pmilosz\Downloads\apache-ant-1.10.1-bin\apache-ant-1.10.1\bin;C:\Users\pmilosz\Downloads\Important jars\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;C:\Users\pmilosz\Downloads\geckodriver-v0.19.1-win64;C:\Users\pmilosz\Downloads\Important jars\chromedriver_win32;C:\Users\pmilosz\AppData\Local\Android\Sdk\tools\bin;C:\Users\pmilosz\AppData\Local\Android\Sdk\tools;C:\Users\pmilosz\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\pmilosz\AppData\Local\Microsoft\WindowsApps;C:\Users\pmilosz\.jenkins\tools\hudson.model.JDK\JDK_8\bin;C:\Users\pmilosz\Downloads\apache-ant-1.10.1-bin\apache-ant-1.10.1\bin;C:\Users\pmilosz\Downloads\Important jars\apache-maven-3.5.2-bin\apache-maven-3.5.2\bin;C:\Users\pmilosz\AppData\Local\GitHubDesktop\bin;C:\Users\pmilosz\Downloads\geckodriver-v0.19.1-win64;C:\Users\pmilosz\Downloads\Important jars\chromedriver_win32;C:\Users\pmilosz\AppData\Roaming\npm;C:\Windows\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,8 +60,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="OpenMainPage" classname="Annotiations.Test.SimpleTest" time="17.991"/>
-  <testcase name="GoToEZakupyPage" classname="Annotiations.Test.SimpleTest" time="4.026"/>
-  <testcase name="LoginToEZakupy" classname="Annotiations.Test.SimpleTest" time="7.749"/>
-  <testcase name="AddToCart" classname="Annotiations.Test.SimpleTest" time="9.924"/>
+  <testcase name="OpenMainPage" classname="Annotiations.Test.SimpleTest" time="17.993"/>
+  <testcase name="GoToEZakupyPage" classname="Annotiations.Test.SimpleTest" time="3.653"/>
+  <testcase name="LoginToEZakupy" classname="Annotiations.Test.SimpleTest" time="4.069"/>
+  <testcase name="AddToCart" classname="Annotiations.Test.SimpleTest" time="6.731"/>
 </testsuite>
