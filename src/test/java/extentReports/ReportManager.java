@@ -32,9 +32,9 @@ public class ReportManager {
         htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTheme(Theme.STANDARD);
-        htmlReporter.config().setDocumentTitle("Paperless test run");
+        htmlReporter.config().setDocumentTitle("Tesco testy");
         htmlReporter.config().setEncoding("UTF-8");
-        htmlReporter.config().setReportName("Paperless test run");
+        htmlReporter.config().setReportName("Tesco test run");
 
         extent = new ExtentReports();
         extent.setSystemInfo("OS", System.getProperty("os.name"));

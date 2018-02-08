@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.31 sec - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.016 sec <<< FAILURE! - in TestSuite
+AddToCart(Annotiations.Test.SimpleTest)  Time elapsed: 7.688 sec  <<< FAILURE!
+java.lang.AssertionError: Name of product selected and in the cart are not the same expected [true] but found [false]
+	at Annotiations.Test.SimpleTest.AddToCart(SimpleTest.java:32)
+

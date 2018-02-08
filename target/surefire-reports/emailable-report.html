@@ -31,20 +31,30 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">MyTests</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">39.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">MyTests</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">42.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">MyTests &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Annotiations.Test.SimpleTest</td><td><a href="#m1"><b>AddToCart</b>  ("Szukanie i dodawanie produktu do koszyka")</a></td><td class="numi">1</td><td>1518095480349</td><td class="numi">7669</td></tr>
 <tr><th colspan="4">MyTests &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="4">Annotiations.Test.SimpleTest</td><td><a href="#m1"><b>OpenMainPage</b>  ("Uruchomienie strony Tesco.pl")</a></td><td class="numi">1</td><td>1518087106798</td><td class="numi">18217</td></tr><tr class="passedodd"><td><a href="#m2"><b>GoToEZakupyPage</b>  ("Przej?cie na strone eZakupy")</a></td><td class="numi">1</td><td>1518087125020</td><td class="numi">4246</td></tr><tr class="passedodd"><td><a href="#m3"><b>LoginToEZakupy</b>  ("Zalogowanie do eZakupy")</a></td><td class="numi">1</td><td>1518087129266</td><td class="numi">4339</td></tr><tr class="passedodd"><td><a href="#m4"><b>AddToCart</b>  ("Szukanie i dodawanie produktu do koszyka")</a></td><td class="numi">1</td><td>1518087133606</td><td class="numi">6959</td></tr>
+<tr class="passedodd"><td rowspan="3">Annotiations.Test.SimpleTest</td><td><a href="#m2"><b>OpenMainPage</b>  ("Uruchomienie strony Tesco.pl")</a></td><td class="numi">1</td><td>1518095454168</td><td class="numi">18053</td></tr><tr class="passedodd"><td><a href="#m3"><b>GoToEZakupyPage</b>  ("Przej?cie na strone eZakupy")</a></td><td class="numi">1</td><td>1518095472227</td><td class="numi">4057</td></tr><tr class="passedodd"><td><a href="#m4"><b>LoginToEZakupy</b>  ("Zalogowanie do eZakupy")</a></td><td class="numi">1</td><td>1518095476284</td><td class="numi">4065</td></tr>
 </table>
 <h1>MyTests</h1>
-<h2 id="m1">Annotiations.Test.SimpleTest:OpenMainPage</h2>
+<h2 id="m1">Annotiations.Test.SimpleTest:AddToCart</h2>
+<div style="padding-left:3em">
+<p>Name of product selected and in the cart are not the same expected [true] but found [false]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertTrue(Assert.java:42)
+<br/>at Annotiations.Test.SimpleTest.AddToCart(SimpleTest.java:32)
+<br/>28 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">Annotiations.Test.SimpleTest:GoToEZakupyPage</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">Annotiations.Test.SimpleTest:LoginToEZakupy</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">Annotiations.Test.SimpleTest:AddToCart</h2>
+<h2 id="m4">Annotiations.Test.SimpleTest:OpenMainPage</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

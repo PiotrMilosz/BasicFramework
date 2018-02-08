@@ -1,13 +1,18 @@
 package listener;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -45,13 +50,21 @@ public class Listeners extends BaseTest implements ITestListener {
         WebDriver webDriver = ((BaseTest) testClass).gimiDriver();
  
         //Take base64Screenshot screenshot.
-        String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).
-                getScreenshotAs(OutputType.BASE64);
+        File scrFile = ((TakesScreenshot)webDriver).getScreenshotAs(OutputType.FILE);
+     // Now you can do whatever you need to do with it, for example copy somewhere
+        String pngFileName = new SimpleDateFormat("yyyyMMddHHmm'.txt'").format(new Date());
+
+        try {
+			FileUtils.copyFile(scrFile, new File("\\target\\" + pngFileName + ".png"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
  
         //Extentreports log and screenshot operations for failed tests.
         rM.getTest().get().fail("Test Failed");
               try {
-				rM.getTest().get().addScreencastFromPath(base64Screenshot);
+				rM.getTest().get().addScreenCaptureFromPath("\\target\\" + pngFileName + ".png");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
