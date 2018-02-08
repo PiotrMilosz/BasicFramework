@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import extentReports.ExtentTestManager;
+
 
 public class SimpleTest extends BaseTest {
 

@@ -1,5 +1,7 @@
 package listener;
 
+import java.io.IOException;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -7,24 +9,33 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.ExtentTest;
 
 import Annotiations.Test.BaseTest;
-import extentReports.ExtentManager;
-import extentReports.ExtentTestManager;
+import extentReports.ReportManager;
+
 
 public class Listeners extends BaseTest implements ITestListener {
-	
+	private ReportManager rM;
+
+	public void onStart(ITestContext context) {
+		ExtentTest parent = rM.getReporter().createTest(context.getName());
+        rM.getParentTest().set(parent);
+		Log.info("I am in onStart method " + context.getName());
+        context.setAttribute("WebDriver", this.driver);
+	}
+
 	public void onTestStart(ITestResult result) {
 		Log.info("I am in onTestStart method " + result.getMethod().getMethodName() + " start");
         //Start operation for extentreports.
-        ExtentTestManager.startTest(result.getMethod().getMethodName(),"");
-	
+		ExtentTest child = rM.getParentTest().get().createNode(result.getMethod().getDescription());
+        rM.getTest().set(child);
 	}
 	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
 		Log.info("Test " + result.getMethod()+" Passed!");
 		//Extentreports log operation for passed tests.
-        ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+		rM.getTest().get().pass("Test passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -38,8 +49,13 @@ public class Listeners extends BaseTest implements ITestListener {
                 getScreenshotAs(OutputType.BASE64);
  
         //Extentreports log and screenshot operations for failed tests.
-        ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
-                ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+        rM.getTest().get().fail("Test Failed");
+              try {
+				rM.getTest().get().addScreencastFromPath(base64Screenshot);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		
 	}
 
@@ -47,7 +63,7 @@ public class Listeners extends BaseTest implements ITestListener {
 
 		Log.warn("Test " + result.getMethod()+" Skipped!");	
 		//Extentreports log operation for skipped tests.
-        ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+		  rM.getTest().get().skip(result.getThrowable());
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -55,17 +71,10 @@ public class Listeners extends BaseTest implements ITestListener {
 		
 	}
 
-	public void onStart(ITestContext context) {
-		Log.info("I am in onStart method " + context.getName());
-        context.setAttribute("WebDriver", this.driver);
-	}
-
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		System.out.println("I am in onFinish method " + context.getName());
         //Do tier down operations for extentreports reporting!
-        ExtentTestManager.endTest();
-        ExtentManager.getReporter().flush();
+		rM.getReporter().flush();
 	}
-	
 }

@@ -12,10 +12,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import Annotiations.Test.EZakupyPage;
 import Annotiations.Test.MainPage;
 import driver.DriverGenerator;
-import extentReports.ExtentTestManager;
+import extentReports.ReportManager;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +28,7 @@ public class BaseTest {
 	protected final Logger Log = LoggerFactory.getLogger(getClass());
 	public MainPage mPage;
 	public EZakupyPage eZakupy;
+	public ReportManager rM;
 	
 	
 	public WebDriver gimiDriver() {
@@ -48,11 +51,6 @@ public class BaseTest {
 		System.out.println("We are in before method");
 	}
 
-	@AfterMethod
-	public void afterTest(ITestResult result) {
-	Log.info("Performing After method");
-	        ExtentTestManager.getTest().setDescription(result.getMethod().getDescription());
-	    }
 	
 	@AfterClass
 	public void quitDriver() {
