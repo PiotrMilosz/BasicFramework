@@ -1,6 +1,0 @@
-10:09:41.059 INFO - I am in onStart method Command line test
-10:09:44.358 INFO - Driver initialised
-10:09:58.873 INFO - Page Tesco.pl opened
-10:09:58.874 INFO - Test null Passed!
-10:09:58.966 ERROR- Test null Failed!
-10:10:01.869 INFO - Driver terminated

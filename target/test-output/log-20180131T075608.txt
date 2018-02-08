@@ -1,4 +1,0 @@
-07:56:11.855 INFO - Driver initialised
-07:56:26.817 INFO - Page Tesco.pl opened
-07:56:26.817 INFO - Test SimpleTest.st_test()[pri:0, instance:Annotiations.Test.SimpleTest@2c039ac6] Passed!!!!!
-07:56:29.621 INFO - Driver terminated

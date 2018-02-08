@@ -1,3 +1,0 @@
-13:45:30.425 INFO - I am in onStart method Command line test
-13:45:30.551 INFO - I am in onTestStart method OpenMainPage start
-13:45:30.619 WARN - Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Skipped!

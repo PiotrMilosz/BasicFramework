@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
+
 
 import properties.GetProperties;
 

@@ -1,5 +1,0 @@
-12:25:34.748 INFO - I am in onStart method Command line test
-12:25:34.762 INFO - Driver initialised
-12:25:34.786 INFO - I am in onTestStart method OpenMainPage start
-12:25:34.869 ERROR- Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Failed!
-12:25:34.870 ERROR- Test SimpleTest.OpenMainPage()[pri:0, instance:Annotiations.Test.SimpleTest@670b40af] Failed!

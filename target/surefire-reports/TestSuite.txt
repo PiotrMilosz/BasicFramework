@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 40.765 sec <<< FAILURE!
-AddToCart(Annotiations.Test.SimpleTest)  Time elapsed: 7.136 sec  <<< FAILURE!
-java.lang.AssertionError: Name of product selected and in the cart are not the same expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Annotiations.Test.SimpleTest.AddToCart(SimpleTest.java:32)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.11 sec - in TestSuite

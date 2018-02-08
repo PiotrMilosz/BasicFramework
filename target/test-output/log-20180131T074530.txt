@@ -1,3 +1,0 @@
-07:45:33.791 INFO - Driver initialised
-07:45:45.334 INFO - Page Tesco.pl opened
-07:45:45.334 INFO - Test null Passed!!!!!

@@ -10,12 +10,11 @@ import org.testng.ITestResult;
 import com.relevantcodes.extentreports.LogStatus;
 
 import Annotiations.Test.BaseTest;
-import driver.DriverGenerator;
 import extentReports.ExtentManager;
 import extentReports.ExtentTestManager;
 
 public class Listeners extends BaseTest implements ITestListener {
-
+	
 	public void onTestStart(ITestResult result) {
 		Log.info("I am in onTestStart method " + result.getMethod().getMethodName() + " start");
         //Start operation for extentreports.
@@ -23,7 +22,6 @@ public class Listeners extends BaseTest implements ITestListener {
 	
 	}
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
 		Log.info("Test " + result.getMethod()+" Passed!");
 		//Extentreports log operation for passed tests.
         ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
@@ -46,19 +44,18 @@ public class Listeners extends BaseTest implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
+
 		Log.warn("Test " + result.getMethod()+" Skipped!");	
 		//Extentreports log operation for skipped tests.
         ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
 		Log.info("I am in onStart method " + context.getName());
         context.setAttribute("WebDriver", this.driver);
 	}
