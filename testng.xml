@@ -4,9 +4,14 @@
 	<listeners>
 		<listener class-name="listener.Listeners"></listener>
 	</listeners>
-	<test name="MyTests">
+	<test name="Logging and adding item to troley with adding verification">
 		<classes>
-			<class name="Annotiations.Test.SimpleTest" />
+			<class name="Annotiations.Test.LogInToShopAndAddItemToCart" />
+		</classes>
+	</test>
+	<test name="Adding products to trolley with verification of price ">
+		<classes>
+			<class name="Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice" />
 		</classes>
 	</test>
 </suite>

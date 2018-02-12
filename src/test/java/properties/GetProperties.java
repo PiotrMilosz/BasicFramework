@@ -5,69 +5,42 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class GetProperties{
-	
+public class GetProperties {
+
 	public static Properties property;
 	public static FileInputStream fis;
-	
-	
-	
+
+	public static String getPropertyFromDoc(String whatProperty) {
+		try {
+			fis = new FileInputStream(System.getProperty("user.dir") + "\\resources\\selenium-tests.properties");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		property = new Properties();
+		try {
+			property.load(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return property.getProperty(whatProperty);
+	}
+
 	public static String getBrowser() {
-		try {
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		property = new Properties();
-		try {
-			property.load(fis);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return property.getProperty("browser");
-	
+		return getPropertyFromDoc("browser");
 	}
-	
-	public static String getUrl() throws IOException {
-		fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
-		property = new Properties();
-		property.load(fis);
-		String browserUrl=property.getProperty("url");
-		return browserUrl;
+
+	public static String getUrl() {
+		return getPropertyFromDoc("url");
 	}
-	
+
 	public static String getLogin() {
-		try {
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		property = new Properties();
-		try {
-			property.load(fis);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return property.getProperty("login");
-}
+		return getPropertyFromDoc("login");
+	}
+
 	public static String getPassword() {
-		try {
-			fis = new FileInputStream(System.getProperty("user.dir")+"\\resources\\selenium-tests.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		property = new Properties();
-		try {
-			property.load(fis);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return property.getProperty("password");
-}
+		return getPropertyFromDoc("password");
+	}
+
 }

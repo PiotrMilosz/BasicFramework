@@ -3,6 +3,7 @@ package Annotiations.Test;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -18,24 +19,30 @@ public class BasePage {
 	protected WebDriver driver;
 	protected WebDriverWait wait;
 	protected final Logger Log = LoggerFactory.getLogger(getClass());
+	  private static final int DEFAULT_TIMEOUT = 15;
+	private static final String ELEMENT_PRESENT_MESSAGE = "ELEMENT PRESENT";
+	private static final String ELEMENT_PRESENT_ERROR_FORMAT = "PROBLEM WITH FINDING ELEMENT %s";
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
 
+	// waiting for WebeElements
 	public void waitElement(WebElement toWait) {
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(toWait));
 
 	}
 
+	// waiting and clicking WebElements
 	public void clickElement(WebElement toClick) {
 		wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(toClick));
 		toClick.click();
 	}
 
+	// wait for page load
 	public void waitForPageLoad() {
 		wait = new WebDriverWait(driver, 10);
 		wait.until(new ExpectedCondition<Boolean>() {
@@ -44,17 +51,32 @@ public class BasePage {
 			}
 		});
 	}
+
+	// verification if Element is on page
 	protected boolean isElementOnPage(WebElement element) {
 		driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
-        boolean isElementOnPage = true;
-        try {
-            // Get location on WebElement is rising exception when element is not present
-            element.getLocation();
-        } catch (WebDriverException ex) {
-            isElementOnPage = false;
-        } finally {
-        	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        }
-        return isElementOnPage;
-}
+		boolean isElementOnPage = true;
+		try {
+			// Get location on WebElement is rising exception when element is not present
+			element.getLocation();
+		} catch (WebDriverException ex) {
+			isElementOnPage = false;
+		} finally {
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		}
+		return isElementOnPage;
+	}
+
+	public WebElement forElementVisible(WebElement element) {
+		driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+		try {
+			return new WebDriverWait(driver, DEFAULT_TIMEOUT).until(ExpectedConditions.visibilityOf(element));
+		} catch (TimeoutException e) {
+			Log.error(ELEMENT_PRESENT_MESSAGE + String.format(ELEMENT_PRESENT_ERROR_FORMAT, element.toString())
+					+ e.toString());
+			throw e;
+		} finally {
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		}
+	}
 }
