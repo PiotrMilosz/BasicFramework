@@ -138,7 +138,6 @@ public class EZakupyPage extends BasePage {
 		}
 
 		List<WebElement> listOfTroleyArtifacts = driver.findElements(By.className("mini-tile__product-info"));
-		double priceTroley;
 		String itemTroleyPriceMach = null;
 		String itemTroleyName = null;
 		for (int i2 = 0; i2 < listOfTroleyArtifacts.size(); i2++) {
@@ -169,8 +168,6 @@ public class EZakupyPage extends BasePage {
 		List<WebElement> listOfTroleyArtifacts = driver.findElements(By.className("mini-tile__price"));
 		double priceTroley = 0.0;
 		double totalTroleyPrice = 0.0;
-		String itemTroleyPriceMach = null;
-		String itemTroleyName = null;
 		for (int i2 = 0; i2 < listOfTroleyArtifacts.size(); i2++) {
 			// Name of Item in Troley
 			WebElement priceTroleyWE = listOfTroleyArtifacts.get(i2).findElement(By.className("value"));
