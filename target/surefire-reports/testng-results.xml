@@ -2,92 +2,92 @@
 <testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="MyTestSuite" duration-ms="120222" started-at="2018-02-12T12:40:04Z" finished-at="2018-02-12T12:42:04Z">
+  <suite name="MyTestSuite" duration-ms="105949" started-at="2018-02-15T07:08:12Z" finished-at="2018-02-15T07:09:58Z">
     <groups>
     </groups>
-    <test name="Logging and adding item to troley with adding verification" duration-ms="58487" started-at="2018-02-12T12:40:04Z" finished-at="2018-02-12T12:41:03Z">
+    <test name="Logging and adding item to troley with adding verification" duration-ms="42844" started-at="2018-02-15T07:08:12Z" finished-at="2018-02-15T07:08:55Z">
       <class name="Annotiations.Test.LogInToShopAndAddItemToCart">
-        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="initialiseDriver" is-config="true" duration-ms="4485" started-at="2018-02-12T13:40:04Z" finished-at="2018-02-12T13:40:09Z">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="initialiseDriver" is-config="true" duration-ms="3302" started-at="2018-02-15T08:08:12Z" finished-at="2018-02-15T08:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseDriver -->
-        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="OpenMainPage" duration-ms="20489" started-at="2018-02-12T13:40:09Z" description="Opening page Tesco.pl" finished-at="2018-02-12T13:40:29Z">
+        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="OpenMainPage" duration-ms="17499" started-at="2018-02-15T08:08:15Z" description="Opening page Tesco.pl" finished-at="2018-02-15T08:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenMainPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:40:09Z" finished-at="2018-02-12T13:40:09Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:08:15Z" finished-at="2018-02-15T08:08:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:40:29Z" finished-at="2018-02-12T13:40:29Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-15T08:08:33Z" finished-at="2018-02-15T08:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="GoToEZakupyPage" duration-ms="5093" started-at="2018-02-12T13:40:29Z" description="Go to eZakupy page" finished-at="2018-02-12T13:40:34Z">
+        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="GoToEZakupyPage" duration-ms="4047" started-at="2018-02-15T08:08:33Z" description="Go to eZakupy page" finished-at="2018-02-15T08:08:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToEZakupyPage -->
-        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="LoginToEZakupy" duration-ms="4120" started-at="2018-02-12T13:40:34Z" description="Loging to eZakupy application" finished-at="2018-02-12T13:40:39Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:08:37Z" finished-at="2018-02-15T08:08:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="LoginToEZakupy" duration-ms="4655" started-at="2018-02-15T08:08:37Z" description="Loging to eZakupy application" finished-at="2018-02-15T08:08:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToEZakupy -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:40:34Z" finished-at="2018-02-12T13:40:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:08:41Z" finished-at="2018-02-15T08:08:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-12T13:40:39Z" finished-at="2018-02-12T13:40:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AddToCart()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="AddToCart" duration-ms="21652" started-at="2018-02-12T13:40:39Z" description="Searching and adding products to the trolley" finished-at="2018-02-12T13:41:00Z">
+        <test-method status="PASS" signature="AddToCart()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="AddToCart" duration-ms="8624" started-at="2018-02-15T08:08:41Z" description="Searching and adding products to the trolley" finished-at="2018-02-15T08:08:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddToCart -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="quitDriver" is-config="true" duration-ms="2510" started-at="2018-02-12T13:41:00Z" finished-at="2018-02-12T13:41:03Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAddItemToCart@fad74ee]" name="quitDriver" is-config="true" duration-ms="4581" started-at="2018-02-15T08:08:50Z" finished-at="2018-02-15T08:08:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- Annotiations.Test.LogInToShopAndAddItemToCart -->
     </test> <!-- Logging and adding item to troley with adding verification -->
-    <test name="Adding products to trolley with verification of price " duration-ms="61456" started-at="2018-02-12T12:41:03Z" finished-at="2018-02-12T12:42:04Z">
+    <test name="Adding products to trolley with verification of price " duration-ms="62796" started-at="2018-02-15T07:08:55Z" finished-at="2018-02-15T07:09:58Z">
       <class name="Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice">
-        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="initialiseDriver" is-config="true" duration-ms="2690" started-at="2018-02-12T13:41:03Z" finished-at="2018-02-12T13:41:06Z">
+        <test-method status="PASS" signature="initialiseDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="initialiseDriver" is-config="true" duration-ms="2675" started-at="2018-02-15T08:08:55Z" finished-at="2018-02-15T08:08:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseDriver -->
-        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="OpenMainPage" duration-ms="18768" started-at="2018-02-12T13:41:06Z" description="Opening page Tesco.pl" finished-at="2018-02-12T13:41:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:08:58Z" finished-at="2018-02-15T08:08:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="OpenMainPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="OpenMainPage" duration-ms="18233" started-at="2018-02-15T08:08:58Z" description="Opening page Tesco.pl" finished-at="2018-02-15T08:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenMainPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:41:06Z" finished-at="2018-02-12T13:41:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="GoToEZakupyPage" duration-ms="3925" started-at="2018-02-12T13:41:24Z" description="Go to eZakupy page" finished-at="2018-02-12T13:41:28Z">
+        <test-method status="PASS" signature="GoToEZakupyPage()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="GoToEZakupyPage" duration-ms="4062" started-at="2018-02-15T08:09:16Z" description="Go to eZakupy page" finished-at="2018-02-15T08:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoToEZakupyPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:41:24Z" finished-at="2018-02-12T13:41:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:09:16Z" finished-at="2018-02-15T08:09:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:41:28Z" finished-at="2018-02-12T13:41:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:09:20Z" finished-at="2018-02-15T08:09:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="LoginToEZakupy" duration-ms="3954" started-at="2018-02-12T13:41:28Z" description="Loging to eZakupy application" finished-at="2018-02-12T13:41:32Z">
+        <test-method status="PASS" signature="LoginToEZakupy()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="LoginToEZakupy" duration-ms="4481" started-at="2018-02-15T08:09:20Z" description="Loging to eZakupy application" finished-at="2018-02-15T08:09:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToEZakupy -->
-        <test-method status="PASS" signature="AddToCart()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="AddToCart" duration-ms="30129" started-at="2018-02-12T13:41:32Z" description="Searching and adding products to the trolley" finished-at="2018-02-12T13:42:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddToCart -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-12T13:41:32Z" finished-at="2018-02-12T13:41:32Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-15T08:09:24Z" finished-at="2018-02-15T08:09:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="quitDriver" is-config="true" duration-ms="1987" started-at="2018-02-12T13:42:02Z" finished-at="2018-02-12T13:42:04Z">
+        <test-method status="PASS" signature="AddToCart()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="AddToCart" duration-ms="31022" started-at="2018-02-15T08:09:24Z" description="Searching and adding products to the trolley" finished-at="2018-02-15T08:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:Annotiations.Test.LogInToShopAndAdd2ItemsVerifyPrice@12f41634]" name="quitDriver" is-config="true" duration-ms="2319" started-at="2018-02-15T08:09:55Z" finished-at="2018-02-15T08:09:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
